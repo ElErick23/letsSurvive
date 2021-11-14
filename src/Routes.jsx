@@ -1,5 +1,5 @@
 import React from 'react'
-import {Routes, Route, Link} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import App from './App';
 import Alimentos from './pages/Alimentos'
 import Salud from './pages/Salud'
@@ -11,10 +11,10 @@ function Rutas(){
         <div>
         <Routes>
             <Route path="/" element={<App/>}/>
-            <Route path ="Herramientas" element={<Herramientas/>}/>
-            <Route path ="Salud" element={<Salud/>}/>
-            <Route path ="Alimentos" element = {<Alimentos/>}/>
-            <Route path ="Refugio" element = {<Refugio/>}/>
+            <Route path ="herramientas" element={<Herramientas/>}/>
+            <Route path ="salud" element={<Salud/>}/>
+            <Route path ="alimentos" element = {<Alimentos/>}/>
+            <Route path ="/refugio" element = {<Refugio/>}/>
         </Routes>
         </div>
     )

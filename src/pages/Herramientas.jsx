@@ -4,7 +4,7 @@ import Searchbox from '../Searchbox'
 
 
 function Herramientas (){
-    <h1>Hola Moyo</h1>
+    return <h1>Hola Moyamientas</h1>
 }
 
 export default Herramientas

@@ -3,7 +3,7 @@ import icons from '../icons'
 import Searchbox from '../Searchbox'
 
 function Refugio (){
-    <h1>Hola mundo</h1>
+    return <h1>Hola refugio</h1>;
 }
 
 export default Refugio
