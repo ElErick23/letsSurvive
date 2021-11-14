@@ -5,7 +5,7 @@ const Searchbox = (props) =>{
     return(
         <input type='search'
         className='Search'
-        placeholder={props.placeholder} 
+        placeholder="Sobrevive" 
         onChange = {props.handleChange}
         />
     )

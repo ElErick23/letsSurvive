@@ -3,7 +3,14 @@ import icons from '../icons'
 import Searchbox from '../Searchbox'
 
 function Refugio (){
-    return <h1>Hola refugio</h1>;
+    return (
+        <div className="App-header2">
+            <img className="Iconos2"src={icons.refugio}/>
+            <Searchbox/>
+        </div>
+        
+    )
+
 }
 
 export default Refugio
