@@ -1,8 +1,8 @@
 import { useEffect, useState, useReducer } from 'react';
 import Gun from 'gun';
-import Clock from './Clock'
 import icons from './icons'
-import Searchbox from './Searchbox'
+import Clock from 'Components/Clock'
+import Searchbox from 'Components/Searchbox'
 import { Link } from "react-router-dom";
 import './App.css';
 
@@ -11,6 +11,16 @@ const gun = Gun({
     'http://localhost:3030/gun'
   ]
 });
+
+const initialState = {
+  messages: []
+}
+
+function reducer(state, message) {
+  return {
+    messages: [message, ...state.messages]
+  }
+}
 
 function App() {
   return (
@@ -21,8 +31,8 @@ function App() {
         </div>
         <div className="divisor"></div>
         <div className="Clima"><ul>
-          <li>El clima va aquí</li>
-          <li>La fecha va aquí</li>
+          {/* <li>El clima va aquí</li> */}
+          <li>14/11/2021</li>
           <li>27°nte, 36°est</li>
         </ul></div>
         <div className="nuclear">
@@ -32,7 +42,7 @@ function App() {
           </ul>
         </div>
       </header>
-      <body>
+      <div>
         <h1><u>Bienvenido Al</u> Fin del Mundo</h1>
         <div className="guideMenu">
           <img className="Iconos" src={icons.guia} />
@@ -53,23 +63,29 @@ function App() {
             </div>
           </Link>
           <div className="QuickMenu">
-          <Link to='/alimentos'>
-            <div className="card">
-              <img src={icons.pescao} />
-              <span className="caption">Alimento</span>
-            </div>
-          </Link>
-          <Link to='/salud'>
-            <div className="card">
-              <img src={icons.medikit} />
-              <span className="caption">Salud</span>
-            </div>
-          </Link>
+            <Link to='/alimentos'>
+              <div className="card">
+                <img src={icons.pescao} />
+                <span className="caption">Alimento</span>
+              </div>
+            </Link>
+            <Link to='/salud'>
+              <div className="card">
+                <img src={icons.medikit} />
+                <span className="caption">Salud</span>
+              </div>
+            </Link>
+            <Link to='/nuevo-articulo'>
+              <div className="card">
+                <img src={icons.logo} />
+                <span className="caption">Nuevo Articulo</span>
+              </div>
+            </Link>
           </div>
         </div>
-      </body>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,20 +1,16 @@
 import React from 'react'
 import {Routes, Route} from "react-router-dom";
 import App from './App';
-import Alimentos from './pages/Alimentos'
-import Salud from './pages/Salud'
-import Refugio from './pages/Refugio'
-import Herramientas from './pages/Herramientas';
+import ArticleReader from 'Views/ArticleReader'
+import NewArticle from 'Views/NewArticle'
 
 function Rutas(){
     return(
         <div>
         <Routes>
             <Route path="/" element={<App/>}/>
-            <Route path ="herramientas" element={<Herramientas/>}/>
-            <Route path ="salud" element={<Salud/>}/>
-            <Route path ="alimentos" element = {<Alimentos/>}/>
-            <Route path ="/refugio" element = {<Refugio/>}/>
+            <Route path="/nuevo-articulo" element={<NewArticle/>}/>
+            <Route path ="/*" element = {<ArticleReader/>}/>
         </Routes>
         </div>
     )
