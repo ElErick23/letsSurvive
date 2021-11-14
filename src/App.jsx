@@ -48,6 +48,7 @@ function App() {
               <span className="caption">Herramientas</span>
             </div>
           </Link>
+          <div className="QuickMenu">
           <Link to='/alimentos'>
             <div className="card">
               <img src={icons.pescao} />
@@ -60,6 +61,7 @@ function App() {
               <span className="caption">Salud</span>
             </div>
           </Link>
+          </div>
         </div>
       </body>
     </div>

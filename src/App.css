@@ -96,6 +96,18 @@ li.btn{
   justify-content: center;
   max-height: 5rem;
 }
+.App-header2 {
+  min-height: 1rem;
+  display: flex;
+  flex-direction:row;
+  align-items: baseline;
+  padding: 1.5rem;
+  justify-content: space-between;
+  max-height: 1rem;
+  max-width: 30rem;
+  align-self: center;
+  margin-left: 30rem;
+}
 .guideMenu{
   align-content: center;
   display: flex;
@@ -103,7 +115,8 @@ li.btn{
   justify-content: center;
 }
 .Search{
-  padding: .5rem;
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .App-link {
@@ -113,6 +126,12 @@ li.btn{
 .Iconos{
   width: 2rem;
   height: 2rem
+}
+.Iconos2{
+  width: 2.8rem;
+  height: 2.8rem;
+  padding: -2rem;
+  margin: 1rem;
 }
 .guideMenu{
   padding-top: 1rem;
