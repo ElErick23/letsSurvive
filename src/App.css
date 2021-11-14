@@ -1,0 +1,122 @@
+.App {
+  text-align: center;
+  max-width: 35rem;
+  align-self: center;
+  align-content: center;
+  margin:auto;
+  justify-self: center;
+  border-color: black;
+}
+ul{
+  list-style-type: none;
+  font-weight: lighter;
+  font-size: 1rem;
+  padding: 0;
+  align-content: flex-start;
+}
+ul.Quick{
+  padding: 2rem;
+  display: table;
+}
+li.btn{
+  display: block;
+}
+.nuclear{
+  padding: 1rem;
+  justify-content: left;
+  justify-items: left;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.QuickMenu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+.card {
+  margin: 1rem;
+  display: inline-block;
+  padding: 1.5rem;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 300px;
+  vertical-align: top;
+
+}
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0070f3;
+  border-color: #0070f3;
+}
+.caption{
+  display: block;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.divisor{
+  color: black;
+  border-left: 10px solid black;
+  width: auto;
+  
+}
+
+.time{
+  padding-left: 0rem;
+  padding-right: .5rem;
+  font-size: 1.5rem;
+  max-width: 4.5rem;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+
+.App-header {
+  min-height: 1rem;
+  display: flex;
+  flex-direction:row;
+  align-items: baseline;
+  padding: 1.5rem;
+  justify-content: center;
+  max-height: 5rem;
+}
+.guideMenu{
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Search{
+  padding: .5rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Iconos{
+  width: 2rem;
+  height: 2rem
+}
+.guideMenu{
+  padding-top: 1rem;
+}
+h2{
+  font-size: 2rem;
+}
