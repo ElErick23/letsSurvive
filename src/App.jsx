@@ -1,15 +1,19 @@
-import logo from './logo.svg';
+import { useEffect, useState, useReducer } from 'react';
+import Gun from 'gun';
 import Clock from './Clock'
 import icons from './icons'
 import Searchbox from './Searchbox'
-import { Outlet, Link } from "react-router-dom";
-
-
+import { Link } from "react-router-dom";
 import './App.css';
+
+const gun = Gun({
+  peer: [
+    'http://localhost:3030/gun'
+  ]
+});
 
 function App() {
   return (
-
     <div className="App">
       <header className="App-header">
         <div className="Reloj">
@@ -63,7 +67,6 @@ function App() {
         </div>
       </body>
     </div>
-
   );
 }
 

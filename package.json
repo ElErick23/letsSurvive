@@ -7,6 +7,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "gun": "^0.2020.1235",
     "react": "^17.0.2",
     "react-router-dom": "^6.0.2",
     "web-vitals": "^2.1.2"
